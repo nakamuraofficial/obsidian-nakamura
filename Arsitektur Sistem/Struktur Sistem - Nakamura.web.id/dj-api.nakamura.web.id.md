@@ -93,17 +93,17 @@ app/
 
 ### Models — Pengelompokan Domain
 
-| Namespace/Folder | Model |
-|---|---|
-| Root | `User`, `Product`, `Order`, `Transaction`, `Ingredient`, `Olahan`, `Reservasi`, `Pembayaran`, dll. |
-| `Branch/` | `Branch`, `Division`, `Lantai` |
-| `Finance/` | `KasAkun`, `KasSaldo`, `Setoran`, `Pendapatan`, `Pengeluaran`, `AdminEDC`, dll. |
-| `Karyawan/` | `PartTime`, `UserShift` |
-| `ManageProduksi/` | `Produksi`, `ProduksiOlahan`, `Distribusi`, `DistribusiDetail` |
-| `ManageStock/` | `Asset`, `Pembelian`, `DropOrder`, `Loss` |
-| `Marketing/` | `TopSeller` |
-| `MasterData/` | `PaymentMethod`, `Bank` |
-| `Navigation/` | `Menu` |
+| Namespace/Folder  | Model                                                                                              |
+| ----------------- | -------------------------------------------------------------------------------------------------- |
+| Root              | `User`, `Product`, `Order`, `Transaction`, `Ingredient`, `Olahan`, `Reservasi`, `Pembayaran`, dll. |
+| `Branch/`         | `Branch`, `Division`, `Lantai`                                                                     |
+| `Finance/`        | `KasAkun`, `KasSaldo`, `Setoran`, `Pendapatan`, `Pengeluaran`, `AdminEDC`, dll.                    |
+| `Karyawan/`       | `PartTime`, `UserShift`                                                                            |
+| `ManageProduksi/` | `Produksi`, `ProduksiOlahan`, `Distribusi`, `DistribusiDetail`                                     |
+| `ManageStock/`    | `Asset`, `Pembelian`, `DropOrder`, `Loss`                                                          |
+| `Marketing/`      | `TopSeller`                                                                                        |
+| `MasterData/`     | `PaymentMethod`, `Bank`                                                                            |
+| `Navigation/`     | `Menu`                                                                                             |
 
 ---
 
