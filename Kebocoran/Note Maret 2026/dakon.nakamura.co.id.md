@@ -69,16 +69,16 @@ LoginModel.php: `get_real_ip()` trusts `HTTP_X_FORWARDED_FOR`, `HTTP_CLIENT_IP`,
 
 ### Summary
 
-| Finding | Severity | URL |
-|---|---|---|
-| `:raga2501012:Ragaraga21` URL | **Not an exploit** — routes to 404 | — |
-| `login/cekpassword` — full user dump | **Critical** | Unauthenticated |
-| `login/enkrip` / `login/deskrip` — crypto oracle | **Critical** | Unauthenticated |
-| `password/coba_pass` — hash oracle | **High** | Unauthenticated |
-| Hardcoded `mcrypt` encryption key | **High** | Code |
-| Hardcoded JWT secret `dakonJWTKey` | **Medium** | Code |
-| Session values in raw SQL | **Medium** | Code |
-| IP spoofing in audit log | **Low** | Code |
+| Finding                                          | Severity                           | URL             |
+| ------------------------------------------------ | ---------------------------------- | --------------- |
+| `:raga2501012:Ragaraga21` URL                    | **Not an exploit** — routes to 404 | —               |
+| `login/cekpassword` — full user dump             | **Critical**                       | Unauthenticated |
+| `login/enkrip` / `login/deskrip` — crypto oracle | **Critical**                       | Unauthenticated |
+| `password/coba_pass` — hash oracle               | **High**                           | Unauthenticated |
+| Hardcoded `mcrypt` encryption key                | **High**                           | Code            |
+| Hardcoded JWT secret `dakonJWTKey`               | **Medium**                         | Code            |
+| Session values in raw SQL                        | **Medium**                         | Code            |
+| IP spoofing in audit log                         | **Low**                            | Code            |
 
 **Immediate actions:**
 1. Add `$this->session->userdata('isLoginIn')` guard to `enkrip`, `deskrip`, and `cekpassword` in Login.php
