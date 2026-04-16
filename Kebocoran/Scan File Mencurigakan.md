@@ -27,3 +27,9 @@ grep -r -i --include=\*.php.jpg 'move_uploaded_file(' ./
 grep -r -i --include=\*.jpg '<?php' ./
 grep -r -i --include=\*.png '<?php' ./
 ```
+
+Command untuk cek file yang terakhir kali diupdate:
+```
+find /home/nkmr/public_html/ -name "*.php" -mtime -2
+```
+> Note: `-2` untuk 2 hari terakhir
