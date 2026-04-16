@@ -30,6 +30,6 @@ grep -r -i --include=\*.png '<?php' ./
 
 Command untuk cek file yang terakhir kali diupdate:
 ```
-find /home/nkmr/public_html/ -name "*.php" -mtime -2
+find ./ -name "*.php" -mtime -2
 ```
 > Note: `-2` untuk 2 hari terakhir
