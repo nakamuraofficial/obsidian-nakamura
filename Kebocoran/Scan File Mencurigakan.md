@@ -4,7 +4,7 @@ grep -r -i --include=\*.php 'file_put_contents(' ./ > grep-output-file_put_conte
 grep -r -i --include=\*.php 'move_uploaded_file(' ./ > grep-output-move_uploaded_file
 grep -r -i --include=\*.php 'base64_decode(' ./ > grep-output-base64_decode
 grep -r -i --include=\*.php 'eval(' ./ > grep-output-eval
-grep -r -i --include=\*.php "allowed_types'] = '" ./ * > grep-output-allowed_types
+grep -r -i --include=\*.php "allowed_types'] = '" ./ > grep-output-allowed_types
 grep -r -i --include=\*.php "is_writable(" ./ > grep-output-is_writable
 grep -r -i --include=.htaccess "allow" ./ > grep-output-htaccess
 
